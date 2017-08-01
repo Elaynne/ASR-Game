@@ -7,12 +7,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.IO;
 
-//linux 
-/*endereço de ip 192.168.25.233
-endereço de broadcast  192.168.25.255
-rota padrão/dns primário 192.168.25.1
-*/
-
 public class ClientSkt
 {
     public static IEnumerator SendVoice(byte[] audByte)
@@ -21,8 +15,6 @@ public class ClientSkt
         // Create a TcpClient.
         // connected to the same address as specified by the server,
         //port combination
-        //"179.187.35.29"; // ipexterno "177.135.0.208" ipinterno windows "192.168.25.226" linux "192.168.25.233"
-
         string strEnderecoIp = "yourTCP-IP.ddns.net";
         // Create a TCP/IP  socket.
         TcpClient clientSock = new TcpClient();
